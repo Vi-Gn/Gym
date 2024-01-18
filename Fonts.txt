@@ -1,0 +1,13 @@
+Fonts used in this design:
+
+Font: Bebas Neue
+Author: Ryoichi Tsunekawa
+Url: https://fonts.google.com/specimen/Bebas+Neue
+
+Font: Pacifico
+Author: Vernon Adams,Jacques Le Bailly,Botjo Nikoltchev,Ani Petrova
+Url: https://fonts.google.com/specimen/Pacifico
+
+Font: Josefin Sans
+Author: Santiago Orozco
+Url: https://fonts.google.com/specimen/Josefin+Sans

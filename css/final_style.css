@@ -1,0 +1,670 @@
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root {
+    --bleu-royal: #2962FF;
+    --vert-emeraude-profond: #008080;
+    --or-doux: #f4c30b;
+    --bleu-nuit-mysterieux: #001f3f;
+    --corail-vif: #ff5733;
+    --gris-perle-fonce: #808080;
+    --gris-clair: #efefef;
+    --white: white;
+
+    --transition: all .5s ease-in-out;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+    color: #666;
+}
+
+ul{
+    list-style: none
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    background-color: #fff;
+}
+
+
+.font_roboto{
+    font-family: "Roboto";
+}
+
+.font_roboto_flex{
+    font-family: "Roboto Flex";
+}
+
+.font_pacifico{
+    font-family: "Pacifico";
+}
+
+.font_Josefin_Sans{
+    font-family : "Josefin Sans";
+}
+.header-navbar{
+    background-color: #200d34;
+    color: var(--white);
+    border-bottom: 1px solid white;
+}
+
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-end{
+    justify-content: end;
+}
+
+.top-bar{
+    background-color: black;
+    color: var(--gris-clair);
+    padding: 8px 0;
+}
+
+.top-bar p{
+    margin-right: 30px;
+}
+
+.top-bar p:last-child{
+    margin-right: 0;
+}
+
+.icon-top-bar, .icon-nav-header{
+    margin-right: 8px;
+}
+
+
+.header-navbar{
+    background-color: #200d34;
+    color: var(--white);
+    border-bottom: 1px solid white;
+}
+
+
+
+.header-navbar .container{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header-navbar ul li{
+    border-right: 1px solid var(--gris-clair);
+}
+
+.header-navbar ul li:first-child{
+    border-left: 1px solid var(--gris-clair);
+}
+
+.header-navbar ul li a{
+    display: block;
+    color: var(--white);
+    font-family: "Roboto Flex";
+    font-weight: lighter;
+    padding: 20px 15px;
+    transition: var(--transition);
+
+}
+
+.header-navbar ul li a:hover{
+    background: var(--gris-clair);
+    color: var(--bleu-nuit-mysterieux);
+}
+
+section.banniere{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: a;
+    background-size: cover;
+    height: 600px;
+    
+}
+
+section.banniere .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 90%;
+}
+
+section.banniere .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-search-banniere{
+    margin-right: 10;
+}
+
+section.banniere .conteneur{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.titre_1_banniere pre, .titre_2_banniere, .form-banniere{
+    font-family: "Bebas Neue Pacifico";
+    text-align: center;
+}
+
+.titre_1_banniere{
+    font-size: 70px;
+    font-family:" Bebas Neue" ;
+    
+}
+
+.titre_2_banniere{
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.form-banniere input{
+    width: 70%;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--gris-clair);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.form-banniere button{
+    width: 15%;
+    height: 40px;
+    border-radius: 0 10px 10px 0; 
+    background: var(--corail-vif);
+    color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+section.why-choose-us{
+  background-image: url(../images/us-bg.jpg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.container_why-choose-us h1{
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.row_why-choose-us{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.row_why-choose-us .col_4{
+  width: 25%;
+}
+
+.why-choose-us .container_col_4{
+  text-align: center;
+}
+
+.why-choose-us .container_col_4 img{
+  margin-bottom: 10px;
+}
+
+.why-choose-us .container_col_4 h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+main{
+    background-image: url(../images/us-bg.jpg);
+    color: white;
+}
+
+
+
+.healthy{
+  background-image: url(../images/healthy-bg.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.container_healthy{
+  text-align: center;
+}
+.container_healthy h1{
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+
+.container_healthy p{
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.container_healthy button{
+  display: inline-block;
+  background: transparent;
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: 3px solid var(--or-doux);
+  color: var(--or-doux);
+  font-size: 18px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.container_healthy button:hover{
+  background: var(--or-doux);
+  color: white;
+}
+
+.our_gym_trainers h1{
+    text-align: center;
+}
+
+.our_gym_trainers .flex{
+    display: flex;
+    justify-content: space-around;
+}
+.our_gym_trainers .flex h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.container_our_gym_trainers{
+    padding-bottom: 60px;
+}
+.container_our_gym_trainers h1{
+    padding-top: 100px;
+    font-size: 40px;
+    font-family: "roboto";
+}
+.our_gym_trainers img{
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgb(17, 17, 17);
+}
+
+.name button{
+    padding: 20px;
+    width: 200px;
+    border-radius: 40px;
+    margin-top: -50px;
+    border: none;
+}
+.name button:hover{
+    background: var(--or-doux);
+  color: white;
+}
+
+.musculation{
+    display: flex;
+    justify-content: space-around;
+}
+.salle-de-bain h2{
+    text-align: center;
+    font-family: "roboot";
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.Rooms h1{
+    font-size: 40px;
+    font-family: "Pacifico";
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.Sanctuary-of-Physical{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+.The-Gym h3 {
+    text-align: center;
+    font-family: "roboot";
+    font-size: 25px;
+    color: #dfd8d8;
+}
+.Sanctuary-of-Physical h1{
+    font-family: "Pacifico";
+    font-size: 40px;
+
+}
+.The-Gym p{
+    text-align: center;
+}
+.Amenities{
+    background-image: url(../images/healthy-bg.jpg);
+    padding-bottom: 40px;
+}
+.supervised{
+    display: flex;
+    justify-content: space-around;
+}
+
+.supervided .Fully img{
+    display: inline-block;
+    width:500px; 
+    height:400px;
+}
+.assessment{
+    display: flex;
+    padding-top: 50px;
+    color: white;
+}  
+.mv2{
+    display: flex;
+    padding-top: 50px;
+}
+
+.aminities-img{
+    display: inline;
+    width:150px;
+    height:80px;
+}
+.mv2 h1{
+   font-size: 40px;
+   font-family:" Roboto"; 
+}
+.supervised ul li a{
+    color: rgb(182, 178, 178);
+    font-size: 20px;
+}
+.Fully img{
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgb(17, 17, 17);
+}
+
+footer{
+    background: black;
+
+}
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.footerA{
+    display: block;
+}
+.font-awesome{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid grey;
+    padding-bottom: 30px;
+}
+
+.footerQ{
+    display: block;
+}
+footer img{
+    margin-left: 30px;
+}
+
+
+section.contact .contact-container{
+    display: flex;
+    padding-top: 60px;
+}
+section.contact .inputVre{
+    width: 45%;
+    display: block;
+    margin-left: 40px;
+}
+section.contact h3{
+    text-align: center;
+    font-family:"Pacifico" ;
+    font-size: 40px;
+}
+
+section.contact form input{
+    padding: 25px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+section.contact form button{
+    display: block;
+    margin-left: auto;
+    padding: 15px;
+    width: 160px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+
+
+}   
+section.contact form button:hover{
+    background: var(--or-doux);
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .titre_1_banniere{
+        font-size: 60px;
+    }
+
+    .titre_2_banniere{
+        font-size: 20px;
+    }
+
+    .aminities-img{
+        width:100px;
+        height:50px;
+    }
+
+    .supervised .Fully img{
+        display: inline-block;
+        width:350px; 
+        height:250px;
+    }
+
+    section.contact img{
+        display: none;
+    }
+
+    section.contact .inputVre{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .top-bar{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .header-navbar{
+        border: none;
+    }
+
+    .header-navbar .container{
+        padding: 30px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header-navbar .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-navbar nav{
+        width: 100%;
+    }
+
+    .header-navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-navbar ul li{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    .header-navbar ul li:first-child{
+        border-top: 1px solid white;
+    }
+
+    .header-navbar ul li:first-child{
+        border-left: none;
+    }
+
+    .banniere .titre_1_banniere, .container_why-choose-us h1, .container_healthy h1, .our_gym_trainers h1{
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+
+    .banniere .titre_2_banniere{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .banniere .form-banniere form{
+        width: 100%;
+    }
+
+    .banniere .form-banniere form input{
+        width: 75%;
+    }
+
+    .banniere .form-banniere form button .text-button{
+        display: none;
+    }
+
+    .container_our_gym_trainers{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .mv2{
+        flex-direction: column;
+    }
+
+    .supervised > .nursery{
+        padding-left: 0;
+    }
+
+    .supervised > .Fully{
+        display: none;
+    }
+
+    .font-awesome{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer1{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer img{
+        margin-left: 0;
+    }
+
+    .footerQ{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footerQ img{
+        width: 18px;
+        height: 19px;
+    }
+
+    .footerQ p{
+        margin-bottom: 0;
+    }
+
+    section.contact .inputVre{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.contact .inputVre button{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+}
